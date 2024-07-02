@@ -3,29 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		F620713D2C338C3000DF7D84 /* wyr_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F620713C2C338C3000DF7D84 /* wyr_appApp.swift */; };
-		F620713F2C338C3000DF7D84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F620713E2C338C3000DF7D84 /* ContentView.swift */; };
 		F62071412C338C3100DF7D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62071402C338C3100DF7D84 /* Assets.xcassets */; };
 		F62071442C338C3100DF7D84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F62071432C338C3100DF7D84 /* Preview Assets.xcassets */; };
+		F620714F2C338ED000DF7D84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F620714E2C338ED000DF7D84 /* GoogleService-Info.plist */; };
+		F62071522C338F4000DF7D84 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = F62071512C338F4000DF7D84 /* FirebaseRemoteConfig */; };
+		F62071542C338F4000DF7D84 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F62071532C338F4000DF7D84 /* FirebaseRemoteConfigSwift */; };
+		F62071562C33918700DF7D84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62071552C33918200DF7D84 /* AppDelegate.swift */; };
+		F620715C2C34B9E200DF7D84 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F620715B2C34B9E200DF7D84 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F62071392C338C3000DF7D84 /* wyr_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wyr_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F620713C2C338C3000DF7D84 /* wyr_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wyr_appApp.swift; sourceTree = "<group>"; };
-		F620713E2C338C3000DF7D84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F62071402C338C3100DF7D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F62071432C338C3100DF7D84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F620714E2C338ED000DF7D84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F62071552C33918200DF7D84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F62071572C33955600DF7D84 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ContentView.swift,
+			);
+			target = F62071382C338C3000DF7D84 /* wyr_app */;
+		};
+		F62071682C34BDDB00DF7D84 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				QuestionViewModel.swift,
+			);
+			target = F62071382C338C3000DF7D84 /* wyr_app */;
+		};
+		F620716B2C34BE0100DF7D84 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Question.swift,
+			);
+			target = F62071382C338C3000DF7D84 /* wyr_app */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F620714A2C338C5E00DF7D84 /* view_model */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F62071682C34BDDB00DF7D84 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = view_model; sourceTree = "<group>"; };
+		F620714B2C338C6C00DF7D84 /* model */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F620716B2C34BE0100DF7D84 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = model; sourceTree = "<group>"; };
+		F620714C2C338C7500DF7D84 /* view */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F62071572C33955600DF7D84 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = view; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F62071362C338C3000DF7D84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F620715C2C34B9E200DF7D84 /* Alamofire in Frameworks */,
+				F62071522C338F4000DF7D84 /* FirebaseRemoteConfig in Frameworks */,
+				F62071542C338F4000DF7D84 /* FirebaseRemoteConfigSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +89,14 @@
 		F620713B2C338C3000DF7D84 /* wyr_app */ = {
 			isa = PBXGroup;
 			children = (
+				F62071552C33918200DF7D84 /* AppDelegate.swift */,
+				F620714C2C338C7500DF7D84 /* view */,
+				F620714B2C338C6C00DF7D84 /* model */,
+				F620714A2C338C5E00DF7D84 /* view_model */,
 				F620713C2C338C3000DF7D84 /* wyr_appApp.swift */,
-				F620713E2C338C3000DF7D84 /* ContentView.swift */,
 				F62071402C338C3100DF7D84 /* Assets.xcassets */,
 				F62071422C338C3100DF7D84 /* Preview Content */,
+				F620714E2C338ED000DF7D84 /* GoogleService-Info.plist */,
 			);
 			path = wyr_app;
 			sourceTree = "<group>";
@@ -83,6 +125,11 @@
 			dependencies = (
 			);
 			name = wyr_app;
+			packageProductDependencies = (
+				F62071512C338F4000DF7D84 /* FirebaseRemoteConfig */,
+				F62071532C338F4000DF7D84 /* FirebaseRemoteConfigSwift */,
+				F620715B2C34B9E200DF7D84 /* Alamofire */,
+			);
 			productName = wyr_app;
 			productReference = F62071392C338C3000DF7D84 /* wyr_app.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +158,10 @@
 				Base,
 			);
 			mainGroup = F62071302C338C3000DF7D84;
+			packageReferences = (
+				F62071502C338F4000DF7D84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F620715A2C34B9E200DF7D84 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F620713A2C338C3000DF7D84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +178,7 @@
 			files = (
 				F62071442C338C3100DF7D84 /* Preview Assets.xcassets in Resources */,
 				F62071412C338C3100DF7D84 /* Assets.xcassets in Resources */,
+				F620714F2C338ED000DF7D84 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F620713F2C338C3000DF7D84 /* ContentView.swift in Sources */,
+				F62071562C33918700DF7D84 /* AppDelegate.swift in Sources */,
 				F620713D2C338C3000DF7D84 /* wyr_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +324,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wyr_app/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NFD5PY7N5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -300,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"wyr_app/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NFD5PY7N5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -342,6 +396,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F62071502C338F4000DF7D84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.1;
+			};
+		};
+		F620715A2C34B9E200DF7D84 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F62071512C338F4000DF7D84 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F62071502C338F4000DF7D84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		F62071532C338F4000DF7D84 /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F62071502C338F4000DF7D84 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		F620715B2C34B9E200DF7D84 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F620715A2C34B9E200DF7D84 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F62071312C338C3000DF7D84 /* Project object */;
 }
